@@ -1,0 +1,40 @@
+#post the users
+POST http://localhost:8000/av1/users/login
+Content-Type: application/json
+
+{
+    "fname" : "nimesh",
+    "lname" : "bista",
+    "email" : "nimeshbista164@gmail.com",
+    "role" : "student",
+    "password" : "12345"
+}
+
+#####post the boosks update
+POST http://localhost:8000/av1/books/borrow
+Content-Type: application/json
+
+{
+    "_id":"642aebce9ded13131d33d741"
+}
+
+
+
+
+###get 
+GET http://localhost:8000/av1/books
+###get 
+GET http://localhost:8000/av1/users
+
+
+
+
+
+
+###delete
+PATCH  http://localhost:8000/av1/books
+Content-Type: application/json
+
+{
+    "_id": "642aebce9ded13131d33d741"
+}
